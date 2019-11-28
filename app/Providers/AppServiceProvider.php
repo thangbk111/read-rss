@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\Feed;
+use App\Repositories\FeedRepository;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,5 +28,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        $feedRepo = new FeedRepository();
+        $feeds = $feedRepo->all();
+        View::share('feeds', $feeds);
     }
 }

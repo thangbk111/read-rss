@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FeedController@list')->name('feed_list');
+Route::post('/feeds/create', 'FeedController@create')->name('feed_create');
