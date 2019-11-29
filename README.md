@@ -32,6 +32,7 @@ Remove feed by Feed Id = 5
 `php artisan feed:delete 5`
 
 Create feed with title='Feed Title' and link rss 'https://example.rss'
+
 `php artisan feed:create 'Feed Title' https://example.rss`
 
 Show all post in a feed has feedId = 1
