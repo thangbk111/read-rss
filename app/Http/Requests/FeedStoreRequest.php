@@ -25,7 +25,7 @@ class FeedStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|max:255',
-            'link' => 'required|active_url',
+            'link' => 'required|active_url|unique:feeds',
         ];
     }
 }
