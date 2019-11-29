@@ -16,7 +16,7 @@ Environment requirements
 ## Change .env file to map with your database
 
 ## Migrate Database
-`php artisan key:generate`
+`php artisan migrate`
 ## Run
 `php artisan serve`
 ## Open Brower go to
