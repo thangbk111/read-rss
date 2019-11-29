@@ -8,5 +8,7 @@ Environment requirements
 # Installation
 
 ## Clone this Repo
-`git clone `
-## 
+`git clone https://github.com/thangbk111/read-rss.git`
+## Create a copy of your .env file
+`cp .env.example .env`
+## Generate an app encryption key
