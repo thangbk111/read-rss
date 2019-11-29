@@ -13,7 +13,7 @@ Environment requirements
 `cp .env.example .env`
 ## Generate an app encryption key
 `php artisan key:generate`
-## Change .env file
+## Change .env file to map with your database
 
 ## Migrate Database
 `php artisan key:generate`
